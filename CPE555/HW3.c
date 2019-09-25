@@ -9,7 +9,7 @@ CPE 555 HW 3
 int main() {
   int latD, latM, lonD, lonM; //units for output
   float lon, lat, temp, latS, lonS; //input for latitude and longitude
-  char ns, we; //cardinal directions
+  char ns, ew; //cardinal directions
 
   //Input
   printf("Input Latitude: ");
@@ -46,7 +46,7 @@ int main() {
   lat = lat - latD;
   temp = lat * 60;
   latM = (int) temp;
-  lat = lat - latM;
+  lat = temp - latM;
   temp = lat * 60;
   latS = temp;
 
@@ -54,12 +54,12 @@ int main() {
   lon = lon - lonD;
   temp = lon * 60;
   lonM = (int) temp;
-  lon = lon - lonM;
+  lon = temp - lonM;
   temp = lon * 60;
   lonS = temp;
 
-  printf("Latitude: %d Degrees, %d Minutes, %f Seconds, %c ", latD, latM, latS, ns);
-  printf("Longitude: %d Degrees, %d Minutes, %f Seconds, %c ", lonD, lonM, lonS, ew);
+  printf("Latitude: %d Degrees, %d Minutes, %f Seconds, %c\n", latD, latM, latS, ns);
+  printf("Longitude: %d Degrees, %d Minutes, %f Seconds, %c\n", lonD, lonM, lonS, ew);
 
   return 0;
 

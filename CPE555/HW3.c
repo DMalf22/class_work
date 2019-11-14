@@ -62,5 +62,5 @@ int main() {
   printf("Longitude: %d Degrees, %d Minutes, %f Seconds, %c\n", lonD, lonM, lonS, ew);
 
   return 0;
-
+  
 }

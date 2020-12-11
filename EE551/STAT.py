@@ -23,11 +23,9 @@ while True:
                 #turn names into lower case strings needed for website search
                 fullname = lname[:1] + "/" + lname[:5] + fname[:2]
                 fullname = fullname.lower()
-                print(fullname)
 
                 #prepare website url by inserting necesarry string
                 website = "https://www.baseball-reference.com/players/" + fullname + "01.shtml"
-                print(website)
 
                 #open the webpage and parse for data using Selenium
                 from selenium import webdriver
@@ -87,11 +85,9 @@ while True:
                  #turn names into lower case strigns needed for website search
                  fullname = lname[:1] + "/" + lname[:5] + fname[:2]
                  fullname = fullname.lower()
-                 print(fullname)
 
                  #prepare website url by inserting necesarry string
                  website = "https://www.baseball-reference.com/players/" + fullname + "01.shtml"
-                 print(website)
 
                  #open the webpage and parse for data using Selenium
                  from selenium import webdriver
@@ -171,18 +167,14 @@ while True:
                 #turn names into lower case strigns needed for website search
                 fullname1 = lname1[:1] + "/" + lname1[:5] + fname1[:2]
                 fullname1 = fullname1.lower()
-                print(fullname1)
 
                 fullname2 = lname2[:1] + "/" + lname2[:5] + fname2[:2]
                 fullname2 = fullname2.lower()
-                print(fullname2)
 
                 #prepare website search strings
                 website1 = "https://www.baseball-reference.com/players/" + fullname1 + "01.shtml"
-                print(website1)
 
                 website2 = "https://www.baseball-reference.com/players/" + fullname2 + "01.shtml"
-                print(website2)
 
                 #open the first webpage and parse for data using Selenium
                 from selenium import webdriver
@@ -296,18 +288,14 @@ while True:
                 #turn names into lower case strigns needed for website search
                 fullname1 = lname1[:1] + "/" + lname1[:5] + fname1[:2]
                 fullname1 = fullname1.lower()
-                print(fullname1)
 
                 fullname2 = lname2[:1] + "/" + lname2[:5] + fname2[:2]
                 fullname2 = fullname2.lower()
-                print(fullname2)
 
                 #prepare website search string
                 website1 = "https://www.baseball-reference.com/players/" + fullname1 + "01.shtml"
-                print(website1)
 
                 website2 = "https://www.baseball-reference.com/players/" + fullname2 + "01.shtml"
-                print(website2)
 
                 #open the first webpage and parse for data using Selenium
                 from selenium import webdriver
